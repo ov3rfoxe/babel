@@ -41,6 +41,15 @@ h1 em{font-style:normal;color:var(--acc2);text-shadow:0 0 30px var(--glow)}
 .c3{background:linear-gradient(170deg,#6c9a7a,#122019 78%);transform:translateX(50px) rotate(4deg);z-index:3;border-color:var(--acc);box-shadow:0 0 0 1px var(--acc),0 0 46px var(--glow),0 20px 50px rgba(0,0,0,.55)}
 .c4{background:linear-gradient(170deg,#a87464,#26160f 78%);transform:translateX(150px) rotate(12deg);z-index:1}
 .fan:hover .c1{transform:translateX(-190px) rotate(-16deg)}.fan:hover .c4{transform:translateX(190px) rotate(16deg)}.fan:hover .c3{transform:translateX(60px) translateY(-12px) rotate(3deg)}
+.news{display:grid;gap:14px}
+.rel{border:1px solid var(--edge);background:var(--bg2);border-radius:16px;padding:20px 22px}
+.rel:first-child{border-color:var(--acc);box-shadow:0 0 40px rgba(124,108,240,.14)}
+.rel h3{margin:0 0 4px;font:600 17px var(--body);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.rel .badge{font:600 11px var(--body);letter-spacing:.06em;text-transform:uppercase;background:var(--acc);color:#fff;padding:2px 10px;border-radius:99px}
+.rel time{display:block;color:var(--muted);font-size:13px;margin-bottom:10px}
+.rel ul{margin:0;padding-left:20px;color:var(--text)}.rel li{margin:4px 0}
+.rel p{margin:6px 0;color:var(--muted)}
+.rel a{color:var(--acc2)}
 section{padding-block:64px}
 h2{font:700 clamp(24px,3.4vw,34px)/1.15 var(--display);margin:0 0 12px;text-wrap:balance;letter-spacing:-.01em}
 .sub{color:var(--muted);max-width:56ch;margin:0 0 34px}
@@ -74,7 +83,7 @@ footer{padding-block:34px 44px;color:var(--muted);font-size:13px;display:flex;fl
 </head>
 <body>
 <div class="wrap">
-<nav><a class="logo" href="#"><i>B</i>BABEL</a><div class="links"><a href="#apercu">Aperçu</a><a href="#fonctions">Fonctions</a><a href="#faq">Questions</a></div></nav>
+<nav><a class="logo" href="#"><i>B</i>BABEL</a><div class="links"><a href="#apercu">Aperçu</a><a href="#fonctions">Fonctions</a><a href="#nouveautes">Nouveautés</a><a href="#faq">Questions</a></div></nav>
 
 <header class="hero">
  <div>
@@ -83,7 +92,7 @@ footer{padding-block:34px 44px;color:var(--muted);font-size:13px;display:flex;fl
   <p class="lead">Babel réunit Steam, Epic, Riot et tes applications dans une vraie collection de cartes. Un clic, ça se lance.</p>
   <div class="cta">
    <a class="btn" id="dl" href="#">Télécharger pour Windows</a>
-   <span class="meta">Version <span class="ver">1.0.1</span> · Gratuit · Windows 10 et 11</span>
+   <span class="meta">Version <span class="ver">1.0.5</span> · Gratuit · Windows 10 et 11</span>
   </div>
  </div>
  <div class="fan" aria-hidden="true">
@@ -127,6 +136,12 @@ footer{padding-block:34px 44px;color:var(--muted);font-size:13px;display:flex;fl
  </div>
 </section>
 
+<section id="nouveautes">
+ <h2>Nouveautés</h2>
+ <p class="sub">Ce qui change à chaque version de Babel.</p>
+ <div class="news" id="news"><div class="rel"><p>Chargement des nouveautés…</p></div></div>
+</section>
+
 <section id="faq">
  <h2>Questions fréquentes</h2>
  <p class="sub"></p>
@@ -141,11 +156,11 @@ footer{padding-block:34px 44px;color:var(--muted);font-size:13px;display:flex;fl
  <div class="final">
   <h2>Prêt à ranger tes jeux ?</h2>
   <p class="sub" style="margin-inline:auto">Installe Babel en quelques secondes, sans droits administrateur.</p>
-  <div class="cta"><a class="btn" id="dl2" href="#">Télécharger Babel <span class="ver">1.0.1</span></a></div>
+  <div class="cta"><a class="btn" id="dl2" href="#">Télécharger Babel <span class="ver">1.0.5</span></a></div>
  </div>
 </section>
 
-<footer><span>Babel · fait par ov3rfoxe</span><span>Version <span class="ver">1.0.1</span></span></footer>
+<footer><span>Babel · fait par ov3rfoxe</span><span>Version <span class="ver">1.0.5</span></span></footer>
 </div>
 <script>
 // Le bouton télécharge directement le .exe de la dernière release GitHub.
@@ -168,6 +183,36 @@ fetch("https://api.github.com/repos/" + REPO + "/releases/latest").then(function
   if(j&&j.tag_name){var v=String(j.tag_name).replace(/^v/i,"");document.querySelectorAll(".ver").forEach(function(e){e.textContent=v})}
 }).catch(function(){});
 ["dl","dl2"].forEach(function(id){var a=document.getElementById(id);a.href=RELEASES;a.addEventListener("click",download)});
+
+function renderNews(list){
+  var box=document.getElementById("news"); box.textContent="";
+  list.filter(function(r){return !r.draft&&!r.prerelease}).slice(0,4).forEach(function(r,i){
+    var d=document.createElement("article"); d.className="rel";
+    var h=document.createElement("h3"); h.textContent="Babel "+String(r.tag_name).replace(/^v/i,"");
+    if(i===0){var b=document.createElement("span");b.className="badge";b.textContent="Dernière version";h.appendChild(b)}
+    d.appendChild(h);
+    var t=document.createElement("time"); var dt=new Date(r.published_at);
+    t.dateTime=r.published_at; t.textContent=isNaN(dt)?"":dt.toLocaleDateString("fr-FR",{day:"numeric",month:"long",year:"numeric"}); d.appendChild(t);
+    var ul=null, any=false;
+    String(r.body||"").split(/\r?\n/).forEach(function(line){
+      line=line.trim(); if(!line) {ul=null; return}
+      var m=line.match(/^[-*]\s+(.*)$/);
+      if(m){ if(!ul){ul=document.createElement("ul");d.appendChild(ul)} var li=document.createElement("li"); li.textContent=m[1].replace(/\*\*/g,""); ul.appendChild(li); any=true }
+      else { ul=null; var p=document.createElement("p"); p.textContent=line.replace(/^#+\s*/,"").replace(/\*\*/g,""); d.appendChild(p); any=true }
+    });
+    if(!any){var p=document.createElement("p");p.textContent="Améliorations et corrections.";d.appendChild(p)}
+    box.appendChild(d);
+  });
+  if(!box.children.length) box.innerHTML='<div class="rel"><p>Aucune version publiée pour le moment.</p></div>';
+}
+fetch("https://api.github.com/repos/" + REPO + "/releases?per_page=6").then(function(r){return r.json()}).then(function(j){
+  if(Array.isArray(j)) renderNews(j); else throw 0;
+}).catch(function(){
+  var box=document.getElementById("news"); box.textContent="";
+  var d=document.createElement("div"); d.className="rel"; var p=document.createElement("p");
+  p.innerHTML='Impossible de charger les nouveautés. Elles sont sur la <a href="'+RELEASES.replace("/latest","")+'">page des versions</a>.';
+  d.appendChild(p); box.appendChild(d);
+});
 </script>
 
 </body>
