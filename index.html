@@ -147,12 +147,23 @@ footer{padding-block:34px 44px;color:var(--muted);font-size:13px;display:flex;fl
 <footer><span>Babel · fait par Nathan</span><span>Version 1.0.0</span></footer>
 </div>
 <script>
-// Lien vers la dernière release GitHub : il suit automatiquement les nouvelles versions.
-var DOWNLOAD_URL = "https://github.com/ov3rfoxe/babel/releases/latest";
+// Le bouton télécharge directement le .exe de la dernière release GitHub.
+var REPO = "ov3rfoxe/babel";
+var RELEASES = "https://github.com/" + REPO + "/releases/latest";
 function toast(t){var d=document.createElement("div");d.className="toast";d.setAttribute("role","status");d.textContent=t;document.body.appendChild(d);setTimeout(function(){d.remove()},2600)}
-["dl","dl2"].forEach(function(id){var a=document.getElementById(id);
- if(DOWNLOAD_URL){a.href=DOWNLOAD_URL;a.target="_blank";a.rel="noopener"}
- else a.addEventListener("click",function(e){e.preventDefault();toast("Le lien de téléchargement arrive bientôt.")})});
+function go(u){window.location.href=u}
+function download(e){
+  e.preventDefault();
+  toast("Téléchargement en cours…");
+  fetch("https://api.github.com/repos/" + REPO + "/releases/latest")
+    .then(function(r){return r.json()})
+    .then(function(j){
+      var a=(j.assets||[]).filter(function(x){return /\.exe$/i.test(x.name)})[0];
+      go(a ? a.browser_download_url : RELEASES);
+    })
+    .catch(function(){go(RELEASES)});
+}
+["dl","dl2"].forEach(function(id){var a=document.getElementById(id);a.href=RELEASES;a.addEventListener("click",download)});
 </script>
 
 </body>
