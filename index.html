@@ -77,13 +77,23 @@ code{background:var(--bg2);border:1px solid var(--edge);border-radius:6px;paddin
 .final .cta{justify-content:center}
 footer{padding-block:34px 44px;color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);background:var(--bg2);border:1px solid var(--acc);padding:12px 20px;border-radius:12px;font-size:14px;box-shadow:0 10px 40px var(--glow)}
-@media(max-width:820px){.hero{grid-template-columns:1fr;padding-top:24px}.fan{height:340px;order:-1}.card{transform-origin:center}.c1{transform:translateX(-96px) rotate(-12deg)}.c2{transform:translateX(-38px) rotate(-4deg)}.c3{transform:translateX(38px) rotate(4deg)}.c4{transform:translateX(96px) rotate(12deg)}.fan:hover .c1,.fan:hover .c3,.fan:hover .c4{transform:revert-layer}.duo{grid-template-columns:1fr}nav .links{display:none}}
+.help{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{border:1px solid var(--edge);background:var(--bg2);border-radius:20px;padding:30px 28px;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.panel h3{font:700 20px/1.2 var(--display);margin:0;letter-spacing:-.01em}
+.panel p{color:var(--muted);margin:0 0 12px;max-width:44ch}
+.panel .btn{margin-top:auto}
+.btn.ghost{background:transparent;border:1px solid var(--edge);box-shadow:none;color:var(--text)}
+.btn.ghost:hover{border-color:var(--acc);box-shadow:0 0 30px var(--glow)}
+.heart{color:#ff7a95}
+footer a{color:var(--muted)}footer a:hover{color:var(--text)}
+footer .fl{display:flex;flex-wrap:wrap;gap:18px}
+@media(max-width:820px){.help{grid-template-columns:1fr}.hero{grid-template-columns:1fr;padding-top:24px}.fan{height:340px;order:-1}.card{transform-origin:center}.c1{transform:translateX(-96px) rotate(-12deg)}.c2{transform:translateX(-38px) rotate(-4deg)}.c3{transform:translateX(38px) rotate(4deg)}.c4{transform:translateX(96px) rotate(12deg)}.fan:hover .c1,.fan:hover .c3,.fan:hover .c4{transform:revert-layer}.duo{grid-template-columns:1fr}nav .links{display:none}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<nav><a class="logo" href="#"><i>B</i>BABEL</a><div class="links"><a href="#apercu">Aperçu</a><a href="#fonctions">Fonctions</a><a href="#nouveautes">Nouveautés</a><a href="#faq">Questions</a></div></nav>
+<nav><a class="logo" href="#"><i>B</i>BABEL</a><div class="links"><a href="#apercu">Aperçu</a><a href="#fonctions">Fonctions</a><a href="#nouveautes">Nouveautés</a><a href="#faq">Questions</a><a href="feedback.html">Bugs &amp; idées</a><a href="#soutenir">Soutenir</a></div></nav>
 
 <header class="hero">
  <div>
@@ -155,6 +165,23 @@ footer{padding-block:34px 44px;color:var(--muted);font-size:13px;display:flex;fl
  <details><summary>Est-ce que ça marche sur Mac ou Linux ?</summary><p>Pas pour l'instant. Babel est fait pour Windows 10 et 11.</p></details>
 </section>
 
+<section id="soutenir">
+ <h2>Babel est gratuit, et le restera.</h2>
+ <p class="sub">Pas de pub, pas d'abonnement. Si Babel te plaît, tu peux aider le projet de deux façons.</p>
+ <div class="help">
+  <div class="panel">
+   <h3><span class="heart" aria-hidden="true">♥</span> Soutenir le projet</h3>
+   <p>Un petit don sur Ko-fi, même d'un euro, m'aide à passer du temps sur Babel et à ajouter de nouvelles fonctions.</p>
+   <a class="btn" href="https://ko-fi.com/ov3rfoxe" target="_blank" rel="noopener">Faire un don sur Ko-fi</a>
+  </div>
+  <div class="panel">
+   <h3>Un bug ? Une idée ?</h3>
+   <p>Quelque chose ne marche pas, ou il manque une fonction ? Dis-le moi en deux minutes, je lis tous les messages.</p>
+   <a class="btn ghost" href="feedback.html">Signaler un bug ou proposer une idée</a>
+  </div>
+ </div>
+</section>
+
 <section>
  <div class="final">
   <h2>Prêt à ranger tes jeux ?</h2>
@@ -163,7 +190,7 @@ footer{padding-block:34px 44px;color:var(--muted);font-size:13px;display:flex;fl
  </div>
 </section>
 
-<footer><span>Babel · fait par ov3rfoxe</span><span>Version <span class="ver">1.1.0</span></span></footer>
+<footer><span>Babel · fait par ov3rfoxe · Version <span class="ver">1.1.0</span></span><span class="fl"><a href="feedback.html">Bugs &amp; idées</a><a href="https://ko-fi.com/ov3rfoxe" target="_blank" rel="noopener">Soutenir sur Ko-fi</a><a href="https://github.com/ov3rfoxe/babel">GitHub</a></span></footer>
 </div>
 <script>
 // Le bouton télécharge directement le .exe de la dernière release GitHub.
