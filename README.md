@@ -1,103 +1,98 @@
 <div align="center">
 
+**English** · [Français](README.fr.md)
+
 # Babel
 
-**Tous tes jeux, une seule bibliothèque.**
+**All your games, one library.**
 
-Un lanceur de jeux et d'applications pour Windows, simple et joli.<br>
-Steam, Epic, Riot, GOG, Battle.net, EA et tes applis, rangés dans une vraie collection de cartes.
+A simple, good-looking game and app launcher for Windows.<br>
+Steam, Epic, Riot, GOG, Battle.net, EA and your apps, gathered into a real collection of cards.
 
 [![Version](https://img.shields.io/github/v/release/ov3rfoxe/babel?label=version&color=7c6cf0)](https://github.com/ov3rfoxe/babel/releases/latest)
-[![Téléchargements](https://img.shields.io/github/downloads/ov3rfoxe/babel/total?label=t%C3%A9l%C3%A9chargements&color=7c6cf0)](https://github.com/ov3rfoxe/babel/releases)
-![Windows 10 et 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
-![Gratuit](https://img.shields.io/badge/prix-gratuit-3fbf7a)
+[![Downloads](https://img.shields.io/github/downloads/ov3rfoxe/babel/total?label=downloads&color=7c6cf0)](https://github.com/ov3rfoxe/babel/releases)
+![Windows 10 and 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
+![Free](https://img.shields.io/badge/price-free-3fbf7a)
 
-### [⬇ Télécharger Babel](https://github.com/ov3rfoxe/babel/releases/latest) · [Site officiel](https://ov3rfoxe.github.io/babel/) · [Signaler un bug](https://ov3rfoxe.github.io/babel/feedback.html)
+### [⬇ Download Babel](https://github.com/ov3rfoxe/babel/releases/latest) · [Website](https://ov3rfoxe.github.io/babel/) · [Report a bug](https://ov3rfoxe.github.io/babel/feedback.html)
 
-<img src="images/apercu.jpg" alt="La bibliothèque de Babel, avec les jaquettes des jeux" width="860">
+<img src="images/apercu.jpg" alt="The Babel library, with game cover art" width="860">
 
 </div>
 
-## Pourquoi Babel ?
+> **Note:** the app's interface is currently in French only. Everything below works the same, and the buttons are easy to find.
 
-Tes jeux sont éparpillés entre cinq lanceurs différents, et tu ne sais plus où est quoi. Babel les regroupe tous au même endroit, avec leurs vraies jaquettes, et les lance en un clic. Pas de compte à créer, pas de pub, rien n'est envoyé en ligne.
+## Why Babel?
 
-## Ce que fait Babel
+Your games are scattered across five different launchers, and you've lost track of what's where. Babel puts them all in one place, with their real cover art, and launches them in one click. No account to create, no ads, nothing is sent online.
 
-- **Import en un clic.** Babel trouve tout seul tes jeux Steam, Epic Games, Riot, GOG, Battle.net et EA, et les applications de ton menu Démarrer.
-- **Vraies jaquettes.** Les affiches viennent de Steam et de SteamGridDB, même pour les jeux hors Steam comme Valorant ou Rocket League.
-- **Mode manette.** Appuie sur F11 ou sur Start : Babel passe en plein écran avec de grosses cartes, à parcourir à la manette comme sur une console.
-- **Collections.** Range tes jeux comme tu veux : « Coop », « À finir », « Soirée entre potes »…
-- **Temps de jeu.** Babel affiche ton temps de jeu Steam, et compte aussi celui de tes autres jeux.
-- **Recherche intelligente.** Tape `#coop`, `src:steam`, `cat:jeux` ou `is:fav` dans la barre de recherche, et combine-les.
-- **Raccourci global.** `Ctrl + Alt + B` ouvre ou cache Babel depuis n'importe où, même en plein jeu.
-- **À tes couleurs.** Cinq ambiances (Nuit, Noir, Ardoise, Minuit, Clair) et la couleur d'accent de ton choix.
-- **Glisser-déposer.** Dépose un raccourci ou un `.exe` sur la fenêtre et il rejoint ta bibliothèque.
-- **Mises à jour automatiques.** Babel te prévient quand une nouvelle version sort et l'installe pour toi.
+## What Babel does
+
+- **One-click import.** Babel finds your Steam, Epic Games, Riot, GOG, Battle.net and EA games on its own, plus the apps in your Start menu.
+- **Real cover art.** Posters come from Steam and SteamGridDB, even for non-Steam games like Valorant or Rocket League.
+- **Controller mode.** Press F11 or Start: Babel goes fullscreen with big cards you browse with a gamepad, like on a console.
+- **Collections.** Sort your games however you like: "Co-op", "Backlog", "Game night"…
+- **Playtime.** Babel shows your Steam playtime, and tracks the time spent in your other games too.
+- **Smart search.** Type `#coop`, `src:steam`, `cat:jeux` or `is:fav` in the search bar, and combine them.
+- **Global hotkey.** `Ctrl + Alt + B` shows or hides Babel from anywhere, even in the middle of a game.
+- **Your colors.** Five themes, including a light one, and the accent color of your choice.
+- **Drag and drop.** Drop a shortcut or an `.exe` on the window and it joins your library.
+- **Automatic updates.** Babel tells you when a new version is out and installs it for you.
 
 <table>
 <tr>
-<td width="50%"><img src="images/manette.jpg" alt="Le mode manette de Babel, en plein écran"></td>
-<td width="50%"><img src="images/clair.jpg" alt="Babel avec le thème Clair et un accent rose"></td>
+<td width="50%"><img src="images/manette.jpg" alt="Babel's fullscreen controller mode"></td>
+<td width="50%"><img src="images/clair.jpg" alt="Babel with the light theme and a pink accent"></td>
 </tr>
 <tr>
-<td align="center"><sub>Le mode manette</sub></td>
-<td align="center"><sub>Le thème Clair, accent rose</sub></td>
+<td align="center"><sub>Controller mode</sub></td>
+<td align="center"><sub>Light theme, pink accent</sub></td>
 </tr>
 </table>
 
 ## Installation
 
-1. Télécharge le fichier `Babel-Setup-….exe` depuis la [dernière version](https://github.com/ov3rfoxe/babel/releases/latest).
-2. Lance-le. Pas besoin de droits administrateur.
-3. Au premier lancement, clique sur **Importer** pour ajouter tes jeux.
+1. Download the `Babel-Setup-….exe` file from the [latest release](https://github.com/ov3rfoxe/babel/releases/latest).
+2. Run it. No administrator rights needed.
+3. On first launch, click **Importer** (Import) to add your games.
 
-> **Windows affiche un avertissement ?** C'est normal : l'installateur n'est pas signé numériquement (un certificat coûte plusieurs centaines d'euros par an). Clique sur **Informations complémentaires**, puis sur **Exécuter quand même**.
+> **Windows shows a warning?** That's expected: the installer isn't digitally signed (a certificate costs several hundred euros a year). Click **More info**, then **Run anyway**.
 
-## Raccourcis
+## Shortcuts
 
-| Touche | Action |
+| Key | Action |
 | --- | --- |
-| `Ctrl + Alt + B` | Ouvrir ou cacher Babel (modifiable dans les Réglages) |
-| `Ctrl + F` | Chercher un jeu |
-| `Ctrl + +` / `Ctrl + -` | Agrandir ou réduire les cartes |
-| `F11` ou **Start** | Mode manette |
+| `Ctrl + Alt + B` | Show or hide Babel (can be changed in Settings) |
+| `Ctrl + F` | Search for a game |
+| `Ctrl + +` / `Ctrl + -` | Make cards bigger or smaller |
+| `F11` or **Start** | Controller mode |
 
-**En mode manette :** ◀ ▶ pour parcourir, **A** pour lancer, **Y** pour mettre en favori, **LB / RB** pour changer de catégorie, **B** pour revenir.
+**In controller mode:** ◀ ▶ to browse, **A** to launch, **Y** to add to favorites, **LB / RB** to switch category, **B** to go back.
 
-## Recherche
+## Search
 
-| Tape… | Pour trouver… |
+| Type… | To find… |
 | --- | --- |
-| `zelda` | les jeux dont le nom, la collection ou la source contient « zelda » |
-| `#coop` | les jeux de la collection « Coop » |
-| `src:steam` | les jeux Steam (marche aussi avec `epic`, `gog`, `riot`…) |
-| `cat:jeux` | la catégorie « Jeux » |
-| `is:fav` | tes favoris |
+| `zelda` | games whose name, collection or source contains "zelda" |
+| `#coop` | games in the "Coop" collection |
+| `src:steam` | Steam games (also works with `epic`, `gog`, `riot`…) |
+| `cat:jeux` | the "Jeux" (Games) category |
+| `is:fav` | your favorites |
 
-Tu peux tout combiner : `#coop src:steam is:fav`.
+You can combine everything: `#coop src:steam is:fav`.
 
-## Tes données
+## Your data
 
-Tout reste sur ton PC, dans `%APPDATA%\BabelLauncher` : ta bibliothèque, tes réglages et les jaquettes téléchargées. Babel ne modifie pas tes jeux, il les démarre normalement. La désinstallation garde tes données, au cas où tu reviens.
+Everything stays on your PC, in `%APPDATA%\BabelLauncher`: your library, your settings and the downloaded cover art. Babel doesn't modify your games, it just starts them normally. Uninstalling keeps your data, in case you come back.
 
-## Un bug ? Une idée ?
+## Found a bug? Got an idea?
 
-Passe par le [formulaire du site](https://ov3rfoxe.github.io/babel/feedback.html) ou par le bouton **Écrire…** dans les Réglages de Babel. Je lis tous les messages.
+Use the [form on the website](https://ov3rfoxe.github.io/babel/feedback.html) or the **Écrire…** (Write) button in Babel's Settings. You can write in English, I read every message.
 
-## Soutenir le projet
+## Support the project
 
-Babel est gratuit et le restera. Si tu veux m'aider à continuer, tu peux [m'offrir un café sur Ko-fi](https://ko-fi.com/ov3rfoxe) ♥. Parler de Babel autour de toi aide aussi énormément.
+Babel is free and will stay free. If you'd like to help me keep working on it, you can [buy me a coffee on Ko-fi](https://ko-fi.com/ov3rfoxe) ♥. Telling your friends about Babel helps a lot too.
 
 ---
 
-<details>
-<summary><b>English</b></summary>
-
-**Babel** is a free game and app launcher for Windows 10 and 11. It gathers your Steam, Epic Games, Riot, GOG, Battle.net and EA games, plus your apps, into one card-based library with real cover art. It includes a fullscreen controller mode (F11 or Start), collections, playtime tracking, smart search (`#coop`, `src:steam`, `is:fav`), a global hotkey, light and dark themes, and automatic updates. No account, no ads, nothing leaves your PC.
-
-[Download the latest version](https://github.com/ov3rfoxe/babel/releases/latest). The app is currently in French.
-
-</details>
-
-<div align="center"><sub>Fait par <a href="https://github.com/ov3rfoxe">ov3rfoxe</a> · Jaquettes fournies par Steam et <a href="https://www.steamgriddb.com">SteamGridDB</a></sub></div>
+<div align="center"><sub>Made by <a href="https://github.com/ov3rfoxe">ov3rfoxe</a> · Cover art from Steam and <a href="https://www.steamgriddb.com">SteamGridDB</a></sub></div>
