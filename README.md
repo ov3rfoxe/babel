@@ -14,13 +14,11 @@ Steam, Epic, Riot, GOG, Battle.net, EA and your apps, gathered into a real colle
 ![Windows 10 and 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
 ![Free](https://img.shields.io/badge/price-free-3fbf7a)
 
-### [⬇ Download Babel](https://github.com/ov3rfoxe/babel/releases/latest) · [Website](https://ov3rfoxe.github.io/babel/) · [Report a bug](https://ov3rfoxe.github.io/babel/feedback.html)
+### [⬇ Download Babel](https://github.com/ov3rfoxe/babel/releases/latest) · [Website](https://ov3rfoxe.github.io/babel/?lang=en) · [Report a bug](https://ov3rfoxe.github.io/babel/feedback.html?lang=en)
 
 <img src="images/apercu.jpg" alt="The Babel library, with game cover art" width="860">
 
 </div>
-
-> **Note:** the app's interface is currently in French only. Everything below works the same, and the buttons are easy to find.
 
 ## Why Babel?
 
@@ -33,9 +31,10 @@ Your games are scattered across five different launchers, and you've lost track 
 - **Controller mode.** Press F11 or Start: Babel goes fullscreen with big cards you browse with a gamepad, like on a console.
 - **Collections.** Sort your games however you like: "Co-op", "Backlog", "Game night"…
 - **Playtime.** Babel shows your Steam playtime, and tracks the time spent in your other games too.
-- **Smart search.** Type `#coop`, `src:steam`, `cat:jeux` or `is:fav` in the search bar, and combine them.
+- **Smart search.** Type `#coop`, `src:steam`, `cat:games` or `is:fav` in the search bar, and combine them.
 - **Global hotkey.** `Ctrl + Alt + B` shows or hides Babel from anywhere, even in the middle of a game.
 - **Your colors.** Five themes, including a light one, and the accent color of your choice.
+- **English and French.** Babel follows your Windows language, and you can switch anytime in Settings.
 - **Drag and drop.** Drop a shortcut or an `.exe` on the window and it joins your library.
 - **Automatic updates.** Babel tells you when a new version is out and installs it for you.
 
@@ -54,7 +53,7 @@ Your games are scattered across five different launchers, and you've lost track 
 
 1. Download the `Babel-Setup-….exe` file from the [latest release](https://github.com/ov3rfoxe/babel/releases/latest).
 2. Run it. No administrator rights needed.
-3. On first launch, click **Importer** (Import) to add your games.
+3. On first launch, click **Import** to add your games.
 
 > **Windows shows a warning?** That's expected: the installer isn't digitally signed (a certificate costs several hundred euros a year). Click **More info**, then **Run anyway**.
 
@@ -76,7 +75,7 @@ Your games are scattered across five different launchers, and you've lost track 
 | `zelda` | games whose name, collection or source contains "zelda" |
 | `#coop` | games in the "Coop" collection |
 | `src:steam` | Steam games (also works with `epic`, `gog`, `riot`…) |
-| `cat:jeux` | the "Jeux" (Games) category |
+| `cat:games` | the "Games" category |
 | `is:fav` | your favorites |
 
 You can combine everything: `#coop src:steam is:fav`.
@@ -87,7 +86,7 @@ Everything stays on your PC, in `%APPDATA%\BabelLauncher`: your library, your se
 
 ## Found a bug? Got an idea?
 
-Use the [form on the website](https://ov3rfoxe.github.io/babel/feedback.html) or the **Écrire…** (Write) button in Babel's Settings. You can write in English, I read every message.
+Use the [form on the website](https://ov3rfoxe.github.io/babel/feedback.html?lang=en) or the **Write…** button in Babel's Settings. You can write in English, I read every message.
 
 ## Support the project
 

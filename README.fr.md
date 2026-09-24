@@ -14,7 +14,7 @@ Steam, Epic, Riot, GOG, Battle.net, EA et tes applis, rangés dans une vraie col
 ![Windows 10 et 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
 ![Gratuit](https://img.shields.io/badge/prix-gratuit-3fbf7a)
 
-### [⬇ Télécharger Babel](https://github.com/ov3rfoxe/babel/releases/latest) · [Site officiel](https://ov3rfoxe.github.io/babel/) · [Signaler un bug](https://ov3rfoxe.github.io/babel/feedback.html)
+### [⬇ Télécharger Babel](https://github.com/ov3rfoxe/babel/releases/latest) · [Site officiel](https://ov3rfoxe.github.io/babel/?lang=fr) · [Signaler un bug](https://ov3rfoxe.github.io/babel/feedback.html?lang=fr)
 
 <img src="images/apercu.jpg" alt="La bibliothèque de Babel, avec les jaquettes des jeux" width="860">
 
@@ -34,6 +34,7 @@ Tes jeux sont éparpillés entre cinq lanceurs différents, et tu ne sais plus o
 - **Recherche intelligente.** Tape `#coop`, `src:steam`, `cat:jeux` ou `is:fav` dans la barre de recherche, et combine-les.
 - **Raccourci global.** `Ctrl + Alt + B` ouvre ou cache Babel depuis n'importe où, même en plein jeu.
 - **À tes couleurs.** Cinq ambiances (Nuit, Noir, Ardoise, Minuit, Clair) et la couleur d'accent de ton choix.
+- **Français et anglais.** Babel suit la langue de Windows, et tu peux changer quand tu veux dans les Réglages.
 - **Glisser-déposer.** Dépose un raccourci ou un `.exe` sur la fenêtre et il rejoint ta bibliothèque.
 - **Mises à jour automatiques.** Babel te prévient quand une nouvelle version sort et l'installe pour toi.
 
@@ -85,7 +86,7 @@ Tout reste sur ton PC, dans `%APPDATA%\BabelLauncher` : ta bibliothèque, tes r�
 
 ## Un bug ? Une idée ?
 
-Passe par le [formulaire du site](https://ov3rfoxe.github.io/babel/feedback.html) ou par le bouton **Écrire…** dans les Réglages de Babel. Je lis tous les messages.
+Passe par le [formulaire du site](https://ov3rfoxe.github.io/babel/feedback.html?lang=fr) ou par le bouton **Écrire…** dans les Réglages de Babel. Je lis tous les messages.
 
 ## Soutenir le projet
 
