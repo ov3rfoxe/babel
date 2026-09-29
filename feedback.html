@@ -206,9 +206,11 @@ form.fb{display:grid;gap:22px}
  </div>
 </main>
 
-<footer><span data-en="Babel · made by ov3rfoxe">Babel · fait par ov3rfoxe</span><span class="fl"><a href="index.html" data-en="Home">Accueil</a><a href="https://ko-fi.com/ov3rfoxe" target="_blank" rel="noopener" data-en="Support on Ko-fi">Soutenir sur Ko-fi</a><a href="https://github.com/ov3rfoxe/babel">GitHub</a></span></footer>
+<footer><span data-en="Babel · made by ov3rfoxe">Babel · fait par ov3rfoxe</span><span class="fl"><a href="index.html" data-en="Home">Accueil</a><a href="https://ko-fi.com/ov3rfoxe" target="_blank" rel="noopener" onclick="track('clic-kofi')" data-en="Support on Ko-fi">Soutenir sur Ko-fi</a><a href="https://github.com/ov3rfoxe/babel">GitHub</a></span></footer>
 </div>
 <script>
+// Statistiques de visite (GoatCounter : sans cookies, sans adresse IP enregistrée)
+function track(name){ try{ if(window.goatcounter && goatcounter.count) goatcounter.count({path: name, title: name, event: true}) }catch(e){} }
 // ---- Langue : ?lang=en dans l'adresse, sinon le dernier choix, sinon la langue du navigateur ----
 var LANG=(function(){
   var q=new URLSearchParams(location.search).get("lang");
@@ -297,7 +299,7 @@ form.addEventListener("submit", function(e){
     .then(function(r){ return r.json().catch(function(){ return {} }).then(function(j){ return {ok: r.ok, j: j} }) })
     .then(function(res){
       if (!res.ok){ var m = res.j && res.j.errors && res.j.errors.map(function(x){return x.message}).join(" "); throw new Error(m || "") }
-      form.hidden = true; done.hidden = false; done.focus();
+      form.hidden = true; done.hidden = false; done.focus(); track("formulaire-envoye-" + curType().toLowerCase());
       document.getElementById("donetext").textContent = email.value.trim()
         ? T("Ton message est arrivé. Je te réponds à " + email.value.trim() + " dès que possible.",
             "Your message arrived. I'll reply to " + email.value.trim() + " as soon as I can.")
@@ -311,5 +313,6 @@ document.getElementById("again").addEventListener("click", function(){
   done.hidden = true; form.hidden = false; titre.focus();
 });
 </script>
+<script data-goatcounter="https://ov3rfoxe.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>

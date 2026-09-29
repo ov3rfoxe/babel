@@ -186,7 +186,7 @@ footer .fl{display:flex;flex-wrap:wrap;gap:18px}
   <div class="panel">
    <h3 data-en="&lt;span class=&quot;heart&quot; aria-hidden=&quot;true&quot;&gt;♥&lt;/span&gt; Support the project"><span class="heart" aria-hidden="true">♥</span> Soutenir le projet</h3>
    <p data-en="A small donation on Ko-fi, even just one euro, helps me spend time on Babel and add new features.">Un petit don sur Ko-fi, même d'un euro, m'aide à passer du temps sur Babel et à ajouter de nouvelles fonctions.</p>
-   <a class="btn" href="https://ko-fi.com/ov3rfoxe" target="_blank" rel="noopener" data-en="Donate on Ko-fi">Faire un don sur Ko-fi</a>
+   <a class="btn" href="https://ko-fi.com/ov3rfoxe" target="_blank" rel="noopener" onclick="track('clic-kofi')" data-en="Donate on Ko-fi">Faire un don sur Ko-fi</a>
   </div>
   <div class="panel">
    <h3 data-en="Found a bug? Got an idea?">Un bug ? Une idée ?</h3>
@@ -204,9 +204,11 @@ footer .fl{display:flex;flex-wrap:wrap;gap:18px}
  </div>
 </section>
 
-<footer><span data-en="Babel · made by ov3rfoxe · Version &lt;span class=&quot;ver&quot;&gt;1.1.0&lt;/span&gt;">Babel · fait par ov3rfoxe · Version <span class="ver">1.1.0</span></span><span class="fl"><a href="feedback.html" data-en="Bugs &amp;amp; ideas">Bugs &amp; idées</a><a href="https://ko-fi.com/ov3rfoxe" target="_blank" rel="noopener" data-en="Support on Ko-fi">Soutenir sur Ko-fi</a><a href="https://github.com/ov3rfoxe/babel">GitHub</a></span></footer>
+<footer><span data-en="Babel · made by ov3rfoxe · Version &lt;span class=&quot;ver&quot;&gt;1.1.0&lt;/span&gt;">Babel · fait par ov3rfoxe · Version <span class="ver">1.1.0</span></span><span class="fl"><a href="feedback.html" data-en="Bugs &amp;amp; ideas">Bugs &amp; idées</a><a href="https://ko-fi.com/ov3rfoxe" target="_blank" rel="noopener" onclick="track('clic-kofi')" data-en="Support on Ko-fi">Soutenir sur Ko-fi</a><a href="https://github.com/ov3rfoxe/babel">GitHub</a></span></footer>
 </div>
 <script>
+// Statistiques de visite (GoatCounter : sans cookies, sans adresse IP enregistrée)
+function track(name){ try{ if(window.goatcounter && goatcounter.count) goatcounter.count({path: name, title: name, event: true}) }catch(e){} }
 // ---- Langue : ?lang=en dans l'adresse, sinon le dernier choix, sinon la langue du navigateur ----
 var LANG=(function(){
   var q=new URLSearchParams(location.search).get("lang");
@@ -245,6 +247,7 @@ function toast(t){var d=document.createElement("div");d.className="toast";d.setA
 function go(u){window.location.href=u}
 function download(e){
   e.preventDefault();
+  track("telechargement");
   toast(T("Téléchargement en cours…","Downloading…"));
   fetch("https://api.github.com/repos/" + REPO + "/releases/latest")
     .then(function(r){return r.json()})
@@ -300,5 +303,6 @@ function onLang(){ showVersion(); if(NEWS) renderNews(NEWS); else if(NEWS_ERR) n
 applyLang();
 </script>
 
+<script data-goatcounter="https://ov3rfoxe.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
