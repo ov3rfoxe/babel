@@ -14,7 +14,7 @@ Steam, Epic, Riot, GOG, Battle.net, EA et tes applis, rangés dans une vraie col
 ![Windows 10 et 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4)
 ![Gratuit](https://img.shields.io/badge/prix-gratuit-3fbf7a)
 
-### [⬇ Télécharger Babel](https://github.com/ov3rfoxe/babel/releases/latest) · [Site officiel](https://ov3rfoxe.github.io/babel/?lang=fr) · [Signaler un bug](https://ov3rfoxe.github.io/babel/feedback.html?lang=fr)
+### [⬇ Télécharger Babel](https://github.com/ov3rfoxe/babel/releases/latest) · [Site officiel](https://babel-launcher.com/?lang=fr) · [Signaler un bug](https://babel-launcher.com/feedback.html?lang=fr)
 
 <img src="images/apercu.jpg" alt="La bibliothèque de Babel, avec les jaquettes des jeux" width="860">
 
@@ -86,7 +86,7 @@ Tout reste sur ton PC, dans `%APPDATA%\BabelLauncher` : ta bibliothèque, tes r�
 
 ## Un bug ? Une idée ?
 
-Passe par le [formulaire du site](https://ov3rfoxe.github.io/babel/feedback.html?lang=fr) ou par le bouton **Écrire…** dans les Réglages de Babel. Je lis tous les messages.
+Passe par le [formulaire du site](https://babel-launcher.com/feedback.html?lang=fr) ou par le bouton **Écrire…** dans les Réglages de Babel. Je lis tous les messages.
 
 ## Soutenir le projet
 
