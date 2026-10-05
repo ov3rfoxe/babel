@@ -7,7 +7,7 @@
 **All your games, one library.**
 
 A simple, good-looking game and app launcher for Windows.<br>
-Steam, Epic, Riot, GOG, Battle.net, EA and your apps, gathered into a real collection of cards.
+Steam, Epic, Xbox, Ubisoft, Riot, GOG, Battle.net, EA and your apps, gathered into a real collection of cards.
 
 [![Version](https://img.shields.io/github/v/release/ov3rfoxe/babel?label=version&color=7c6cf0)](https://github.com/ov3rfoxe/babel/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/ov3rfoxe/babel/total?label=downloads&color=7c6cf0)](https://github.com/ov3rfoxe/babel/releases)
@@ -26,7 +26,7 @@ Your games are scattered across five different launchers, and you've lost track 
 
 ## What Babel does
 
-- **One-click import.** Babel finds your Steam, Epic Games, Riot, GOG, Battle.net and EA games on its own, plus the apps in your Start menu.
+- **One-click import.** Babel finds your Steam, Epic Games, Xbox / Game Pass, Ubisoft, Riot, GOG, Battle.net and EA games on its own, plus the apps in your Start menu.
 - **Real cover art.** Posters come from Steam and SteamGridDB, even for non-Steam games like Valorant or Rocket League.
 - **Controller mode.** Press F11 or Start: Babel goes fullscreen with big cards you browse with a gamepad, like on a console.
 - **Collections.** Sort your games however you like: "Co-op", "Backlog", "Game night"…
@@ -36,6 +36,8 @@ Your games are scattered across five different launchers, and you've lost track 
 - **Your colors.** Five themes, including a light one, and the accent color of your choice.
 - **English and French.** Babel follows your Windows language, and you can switch anytime in Settings.
 - **Drag and drop.** Drop a shortcut or an `.exe` on the window and it joins your library.
+- **What should I play?** Can't decide? The cards spin like a slot machine and stop on a random game (X on a gamepad).
+- **Backup and restore.** Export your library, collections, playtime and settings to one file, and restore them on another PC.
 - **Automatic updates.** Babel tells you when a new version is out and installs it for you.
 
 <table>
@@ -66,7 +68,7 @@ Your games are scattered across five different launchers, and you've lost track 
 | `Ctrl + +` / `Ctrl + -` | Make cards bigger or smaller |
 | `F11` or **Start** | Controller mode |
 
-**In controller mode:** ◀ ▶ to browse, **A** to launch, **Y** to add to favorites, **LB / RB** to switch category, **B** to go back.
+**In controller mode:** ◀ ▶ to browse, **A** to launch, **X** for a random game, **Y** to add to favorites, **LB / RB** to switch category, **B** to go back.
 
 ## Search
 

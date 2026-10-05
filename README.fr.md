@@ -7,7 +7,7 @@
 **Tous tes jeux, une seule bibliothèque.**
 
 Un lanceur de jeux et d'applications pour Windows, simple et joli.<br>
-Steam, Epic, Riot, GOG, Battle.net, EA et tes applis, rangés dans une vraie collection de cartes.
+Steam, Epic, Xbox, Ubisoft, Riot, GOG, Battle.net, EA et tes applis, rangés dans une vraie collection de cartes.
 
 [![Version](https://img.shields.io/github/v/release/ov3rfoxe/babel?label=version&color=7c6cf0)](https://github.com/ov3rfoxe/babel/releases/latest)
 [![Téléchargements](https://img.shields.io/github/downloads/ov3rfoxe/babel/total?label=t%C3%A9l%C3%A9chargements&color=7c6cf0)](https://github.com/ov3rfoxe/babel/releases)
@@ -26,7 +26,7 @@ Tes jeux sont éparpillés entre cinq lanceurs différents, et tu ne sais plus o
 
 ## Ce que fait Babel
 
-- **Import en un clic.** Babel trouve tout seul tes jeux Steam, Epic Games, Riot, GOG, Battle.net et EA, et les applications de ton menu Démarrer.
+- **Import en un clic.** Babel trouve tout seul tes jeux Steam, Epic Games, Xbox / Game Pass, Ubisoft, Riot, GOG, Battle.net et EA, et les applications de ton menu Démarrer.
 - **Vraies jaquettes.** Les affiches viennent de Steam et de SteamGridDB, même pour les jeux hors Steam comme Valorant ou Rocket League.
 - **Mode manette.** Appuie sur F11 ou sur Start : Babel passe en plein écran avec de grosses cartes, à parcourir à la manette comme sur une console.
 - **Collections.** Range tes jeux comme tu veux : « Coop », « À finir », « Soirée entre potes »…
@@ -36,6 +36,8 @@ Tes jeux sont éparpillés entre cinq lanceurs différents, et tu ne sais plus o
 - **À tes couleurs.** Cinq ambiances (Nuit, Noir, Ardoise, Minuit, Clair) et la couleur d'accent de ton choix.
 - **Français et anglais.** Babel suit la langue de Windows, et tu peux changer quand tu veux dans les Réglages.
 - **Glisser-déposer.** Dépose un raccourci ou un `.exe` sur la fenêtre et il rejoint ta bibliothèque.
+- **Je joue à quoi ?** Tu n'arrives pas à choisir ? Les cartes défilent comme une machine à sous et s'arrêtent sur un jeu au hasard (X sur la manette).
+- **Sauvegarde.** Exporte ta bibliothèque, tes collections, ton temps de jeu et tes réglages dans un fichier, et retrouve-les sur un autre PC.
 - **Mises à jour automatiques.** Babel te prévient quand une nouvelle version sort et l'installe pour toi.
 
 <table>
@@ -66,7 +68,7 @@ Tes jeux sont éparpillés entre cinq lanceurs différents, et tu ne sais plus o
 | `Ctrl + +` / `Ctrl + -` | Agrandir ou réduire les cartes |
 | `F11` ou **Start** | Mode manette |
 
-**En mode manette :** ◀ ▶ pour parcourir, **A** pour lancer, **Y** pour mettre en favori, **LB / RB** pour changer de catégorie, **B** pour revenir.
+**En mode manette :** ◀ ▶ pour parcourir, **A** pour lancer, **X** pour un jeu au hasard, **Y** pour mettre en favori, **LB / RB** pour changer de catégorie, **B** pour revenir.
 
 ## Recherche
 
