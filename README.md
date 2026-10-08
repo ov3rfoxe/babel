@@ -28,9 +28,10 @@ Your games are scattered across five different launchers, and you've lost track 
 
 - **One-click import.** Babel finds your Steam, Epic Games, Xbox / Game Pass, Ubisoft, Riot, GOG, Battle.net and EA games on its own, plus the apps in your Start menu.
 - **Real cover art.** Posters come from Steam and SteamGridDB, even for non-Steam games like Valorant or Rocket League.
-- **Controller mode.** Press F11 or Start: Babel goes fullscreen with big cards you browse with a gamepad, like on a console.
+- **Controller mode.** Press F11 or Start: Babel goes fullscreen with big cards you browse with a gamepad, like on a console. The background takes the colors of the selected game.
 - **Collections.** Sort your games however you like: "Co-op", "Backlog", "Game night"…
-- **Playtime.** Babel shows your Steam playtime, and tracks the time spent in your other games too.
+- **Statistics.** Your total playtime, most played games, last 14 days and time per platform. Babel uses your Steam playtime and tracks your other games too.
+- **Hide games.** Right-click > Hide: the game leaves your library, and you'll find it in Show > Hidden.
 - **Smart search.** Type `#coop`, `src:steam`, `cat:games` or `is:fav` in the search bar, and combine them.
 - **Global hotkey.** `Ctrl + Alt + B` shows or hides Babel from anywhere, even in the middle of a game.
 - **Your colors.** Five themes, including a light one, and the accent color of your choice.
@@ -50,6 +51,8 @@ Your games are scattered across five different launchers, and you've lost track 
 <td align="center"><sub>Light theme, pink accent</sub></td>
 </tr>
 </table>
+
+<p align="center"><img src="images/stats_en.jpg" alt="Babel's Statistics page" width="860"><br><sub>The Statistics page</sub></p>
 
 ## Installation
 

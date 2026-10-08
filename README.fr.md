@@ -28,9 +28,10 @@ Tes jeux sont éparpillés entre cinq lanceurs différents, et tu ne sais plus o
 
 - **Import en un clic.** Babel trouve tout seul tes jeux Steam, Epic Games, Xbox / Game Pass, Ubisoft, Riot, GOG, Battle.net et EA, et les applications de ton menu Démarrer.
 - **Vraies jaquettes.** Les affiches viennent de Steam et de SteamGridDB, même pour les jeux hors Steam comme Valorant ou Rocket League.
-- **Mode manette.** Appuie sur F11 ou sur Start : Babel passe en plein écran avec de grosses cartes, à parcourir à la manette comme sur une console.
+- **Mode manette.** Appuie sur F11 ou sur Start : Babel passe en plein écran avec de grosses cartes, à parcourir à la manette comme sur une console. Le fond prend les couleurs du jeu choisi.
 - **Collections.** Range tes jeux comme tu veux : « Coop », « À finir », « Soirée entre potes »…
-- **Temps de jeu.** Babel affiche ton temps de jeu Steam, et compte aussi celui de tes autres jeux.
+- **Statistiques.** Ton temps de jeu total, tes jeux les plus joués, tes 14 derniers jours et ton temps par plateforme. Babel reprend ton temps Steam et compte aussi celui de tes autres jeux.
+- **Masquer des jeux.** Clic droit > Masquer : le jeu disparaît de ta bibliothèque, tu le retrouves dans Afficher > Masqués.
 - **Recherche intelligente.** Tape `#coop`, `src:steam`, `cat:jeux` ou `is:fav` dans la barre de recherche, et combine-les.
 - **Raccourci global.** `Ctrl + Alt + B` ouvre ou cache Babel depuis n'importe où, même en plein jeu.
 - **À tes couleurs.** Cinq ambiances (Nuit, Noir, Ardoise, Minuit, Clair) et la couleur d'accent de ton choix.
@@ -50,6 +51,8 @@ Tes jeux sont éparpillés entre cinq lanceurs différents, et tu ne sais plus o
 <td align="center"><sub>Le thème Clair, accent rose</sub></td>
 </tr>
 </table>
+
+<p align="center"><img src="images/stats.jpg" alt="La page Statistiques de Babel" width="860"><br><sub>La page Statistiques</sub></p>
 
 ## Installation
 
